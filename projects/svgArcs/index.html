@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SVG Arcs</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="section">
+            <svg id="area" width="500" height="500">
+                <path d="" id="path"></path>
+                <circle r="3" cx="250" cy="250" fill="lime" id="start"></circle>
+                <circle r="3" cx="250" cy="250" fill="red" id="end"></circle>
+            </svg>
+        </div>
+
+        <div class="section controls">
+            <table>
+                <tr>
+                    <td colspan="2">Start Point</td>
+                </tr>
+                <tr>
+                    <td><label for="sx">x</label></td>
+                    <td><label for="sy">y</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="range" min="0" max="500" value="250" id="sx">
+                    </td>
+                    <td>
+                        <input type="range" min="0" max="500" value="125" id="sy">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="move"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section controls full">
+            <table>
+                <tr>
+                    <td colspan="8">Arc format</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td><label for="rx">rx</label></td>
+                    <td><label for="ry">ry</label></td>
+                    <td><label for="a">a</label></td>
+                    <td><label for="s1">S1</label></td>
+                    <td><label for="s2">S2</label></td>
+                    <td><label for="tx">tx</label></td>
+                    <td><label for="ty">ty</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="range" min="0" max="500" value="125" id="rx">
+                    </td>
+                    <td>
+                        <input type="range" min="0" max="500" value="125" id="ry">
+                    </td>
+                    <td>
+                        <input type="range" min="-180" max="180" value="0" id="a">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="s1">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="s2" checked>
+                    </td>
+                    <td>
+                        <input type="range" min="0" max="500" value="375" id="tx">
+                    </td>
+                    <td>
+                        <input type="range" min="0" max="500" value="250" id="ty">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" id="result"></td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section svg {
+    border: 1px solid black;
+}
+
+.full table {
+    width: 90%;
+}
+
+.controls table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.controls td {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.controls input[type='range'] {
+    width: 100%;
+}
+
+#area path {
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+}
